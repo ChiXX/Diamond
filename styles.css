@@ -1,0 +1,122 @@
+#header {
+    background-color: white;
+    color: balck;
+	width: 700px;
+    text-align: center;
+}
+.grid {
+	position: absolute;
+    height: 220px;
+    width: 700px;
+    float: left;
+}
+#startLine {
+	position: absolute;
+	height: 200px;
+	width: 1.5px;
+	background-color: black;
+	left: 24px;
+	bottom: 0px;
+}
+#endtLine {
+	position: absolute;
+	height: 200px;
+	width: 1.5px;
+	background-color: black;
+	left: 524px;
+	bottom: 0px;
+}
+#start {
+	position: absolute;
+	height: 20px;
+	width: 40px;
+	text-align: center;
+	left: 5px;
+	bottom: 190px;
+}
+#end {
+	position: absolute;
+	height: 20px;
+	width: 40px;
+	text-align: center;
+	left: 505px;
+	bottom: 190px;
+}
+.diamond{
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	transform: rotateZ(45deg);
+	background-color: blue;
+}
+#reset {
+	position: absolute;
+	left: 600px;
+	bottom: 200px;
+    border-radius: 12px;
+	
+}
+#y {
+	position: absolute;
+	height: 10px;
+	width: 80px;
+	background-color: yellow;
+	left: 600px;
+	bottom: 150px;
+    border-radius: 12px;
+	
+}
+#y-score {
+	position: absolute;
+	left: 690px;
+	bottom: 135px;
+	font-size: 8px;
+}
+#r {
+	position: absolute;
+	height: 10px;
+	width: 80px;
+	background-color: red;
+	left: 600px;
+	bottom: 135px;
+    border-radius: 12px;
+}
+#r-score {
+	position: absolute;
+	left: 690px;
+	bottom: 120px;
+	font-size: 8px;
+}
+#g {
+	position: absolute;
+	height: 10px;
+	width: 80px;
+	background-color: green;
+	left: 600px;
+	bottom: 120px;
+    border-radius: 12px;
+}
+#g-score {
+	position: absolute;
+	left: 690px;
+	bottom: 105px;
+	font-size: 8px;
+}
+#b {
+	position: absolute;
+	height: 10px;
+	width: 80px;
+	background-color: blue;
+	left: 600px;
+	bottom: 105px;
+    border-radius: 12px;
+}
+#b-score {
+	position: absolute;
+	left: 690px;
+	bottom: 90px;
+	font-size: 8px;
+}
+
+
+
