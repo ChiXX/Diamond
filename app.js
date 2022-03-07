@@ -32,8 +32,8 @@ function moveDiamond(){
 	const color = this['style']['background-color']
 	// move
 	this['style'].left = position + 50 + 'px'
-	displayScores(position, color)
-	// win
+	displayScores(position, color) // input the old position
+	// check win
 	if (position === 460){
 		for (let i = 0; i < diamonds.length; i++){
 			diamonds[i].diamond.removeEventListener('click', moveDiamond)
@@ -49,7 +49,7 @@ function displayScores(position, color){
 		score.style.color = 'red'
 	}
 }
-// reset
+
 reset.addEventListener('click', () => {
 	const scores = document.querySelectorAll('.score')
 	for (let i = 0; i < scores.length; i++){
