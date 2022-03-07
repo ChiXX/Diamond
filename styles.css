@@ -18,7 +18,7 @@
 	left: 24px;
 	bottom: 0px;
 }
-#endtLine {
+#endLine {
 	position: absolute;
 	height: 200px;
 	width: 1.5px;
@@ -56,7 +56,7 @@
     border-radius: 12px;
 	
 }
-#y {
+#yellow-diamond {
 	position: absolute;
 	height: 10px;
 	width: 80px;
@@ -66,13 +66,13 @@
     border-radius: 12px;
 	
 }
-#y-score {
+#yellow-score {
 	position: absolute;
 	left: 690px;
 	bottom: 135px;
 	font-size: 8px;
 }
-#r {
+#red-diamond {
 	position: absolute;
 	height: 10px;
 	width: 80px;
@@ -81,13 +81,13 @@
 	bottom: 135px;
     border-radius: 12px;
 }
-#r-score {
+#red-score {
 	position: absolute;
 	left: 690px;
 	bottom: 120px;
 	font-size: 8px;
 }
-#g {
+#green-diamond {
 	position: absolute;
 	height: 10px;
 	width: 80px;
@@ -96,13 +96,13 @@
 	bottom: 120px;
     border-radius: 12px;
 }
-#g-score {
+#green-score {
 	position: absolute;
 	left: 690px;
 	bottom: 105px;
 	font-size: 8px;
 }
-#b {
+#blue-diamond {
 	position: absolute;
 	height: 10px;
 	width: 80px;
@@ -111,7 +111,7 @@
 	bottom: 105px;
     border-radius: 12px;
 }
-#b-score {
+#blue-score {
 	position: absolute;
 	left: 690px;
 	bottom: 90px;

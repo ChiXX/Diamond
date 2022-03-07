@@ -2,19 +2,24 @@ const grid = document.querySelector('.grid')
 const reset = document.querySelector('#reset')
 const scores = Array.from(document.querySelectorAll('.score')).reverse()
 
+// reset function
 reset.addEventListener('click', () => {
 	const allDiamonds = Array.from(document.querySelectorAll('.diamond'))
+	// wipe the diamonds
 	for (let i = 0; i < allDiamonds.length; i++){
 		allDiamonds[i].classList.remove('diamond')
 	}
+	// reset the coordinates of diamonds
 	for (let i = 0; i < diamonds.length; i++ ){
-		diamonds[i].left = i + 10
+		diamonds[i].left = 10
 		diamonds[i].bottom = i * 50 + 10
 	}
+	// reset scores
 	for (let i = 0; i < scores.length; i++ ){
 		scores[i].textContent = 0
 		scores[i].style.color = 'black'
 	}
+	// redraw the diomands
 	drawDiamonds()
 })
 
@@ -49,15 +54,17 @@ function drawDiamonds(){
 
 function moveDiamond(){
 	const diamondId = this.getAttribute('diamond-id')
-	if (diamonds[diamondId].left < 510){
-		const allDiamonds = Array.from(document.querySelectorAll('.diamond'))
-		for (let i = 0; i < allDiamonds.length; i++){
-			allDiamonds[i].classList.remove('diamond')
-		}
-		diamonds[diamondId].left += 50
-		drawDiamonds()
-		displayScores()
-	}else{
+	const allDiamonds = Array.from(document.querySelectorAll('.diamond'))
+	// wipe current diamonds
+	for (let i = 0; i < allDiamonds.length; i++){
+		allDiamonds[i].classList.remove('diamond')
+	}
+	// update coodinates (move)
+	diamonds[diamondId].left += 50
+	drawDiamonds()
+	displayScores()
+	// check win
+	if (diamonds[diamondId].left === 510){
 		const allDiamonds = Array.from(document.querySelectorAll('.diamond'))
 		for (let i = 0; i < allDiamonds.length; i++){
 			allDiamonds[i].removeEventListener('click', moveDiamond)
